@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="00. Manager">
+      <UniqueIdentifier>{7c34a300-3646-48bf-840e-840502aa43c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Manager\00. cGameManager">
+      <UniqueIdentifier>{56068186-8274-47d2-bfe5-618b517fdcf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99. ETC">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="98. UTIL">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="00. Manager\01.cObjectManager">
+      <UniqueIdentifier>{96a349cd-117e-4558-b7af-7f0c7801bfdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. cObject">
+      <UniqueIdentifier>{d648ba09-e75a-4c97-b53c-bb03ed870f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. cObject\00. cFrame">
+      <UniqueIdentifier>{31f0d70c-7cf8-4c74-8b33-b094f32b990f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Manager\02. cInputManager">
+      <UniqueIdentifier>{3fef3a32-a399-438f-8fef-69d2c81c9dbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Manager\03. cTextureManager">
+      <UniqueIdentifier>{f1f853ce-7666-40e1-b3ee-10e350cd6826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Manager\04. cDeviceManager">
+      <UniqueIdentifier>{2facc177-0588-4e31-82e9-9267a158780d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Manager\05. cSoundManager">
+      <UniqueIdentifier>{76cfc074-3773-4b01-ac4a-be5a1f23459c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Manager\07. cUIManager">
+      <UniqueIdentifier>{058b4c73-4b1f-4da1-984e-a2b85d2abb09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Manager\06. cAIManager">
+      <UniqueIdentifier>{eafc22da-8a79-4ce5-a72c-17e43673b203}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>99. ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>99. ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>99. ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="cGameManager.h">
+      <Filter>00. Manager\00. cGameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MountAndWarcraft.h" />
+    <ClInclude Include="Singleton.h">
+      <Filter>98. UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="cObjectManager.h">
+      <Filter>00. Manager\01.cObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="cObject.h">
+      <Filter>01. cObject</Filter>
+    </ClInclude>
+    <ClInclude Include="cFrame.h">
+      <Filter>01. cObject\00. cFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="cInputManager.h">
+      <Filter>00. Manager\02. cInputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="cTextureManager.h">
+      <Filter>00. Manager\03. cTextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="cDeviceManager.h">
+      <Filter>00. Manager\04. cDeviceManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cGameManager.cpp">
+      <Filter>00. Manager\00. cGameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MountAndWarcraft.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <Filter>99. ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="cObjectManager.cpp">
+      <Filter>00. Manager\01.cObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="cObject.cpp">
+      <Filter>01. cObject</Filter>
+    </ClCompile>
+    <ClCompile Include="cFrame.cpp">
+      <Filter>01. cObject\00. cFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="cTextureManager.cpp">
+      <Filter>00. Manager\03. cTextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="cDeviceManager.cpp">
+      <Filter>00. Manager\04. cDeviceManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MountAndWarcraft.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="MountAndWarcraft.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
