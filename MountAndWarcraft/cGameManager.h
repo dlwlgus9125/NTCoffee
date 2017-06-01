@@ -1,4 +1,6 @@
 #pragma once
+#include "cCamera.h"
+#include "cPlayer.h"
 
 #define GAMEMAIN cGameManager::Instance()
 
@@ -13,5 +15,10 @@ public:
 	void Update();
 	void Render();
 	void Release();
+
+	void WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
+
+
 };
+
 

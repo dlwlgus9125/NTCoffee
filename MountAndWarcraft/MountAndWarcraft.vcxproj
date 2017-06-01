@@ -77,6 +77,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -140,26 +142,46 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cCamera.h" />
+    <ClInclude Include="cCharacter.h" />
     <ClInclude Include="cDeviceManager.h" />
     <ClInclude Include="cFrame.h" />
+    <ClInclude Include="cFrustum.h" />
     <ClInclude Include="cGameManager.h" />
     <ClInclude Include="cInputManager.h" />
     <ClInclude Include="cObject.h" />
     <ClInclude Include="cObjectManager.h" />
+    <ClInclude Include="cPlayer.h" />
     <ClInclude Include="cTextureManager.h" />
+    <ClInclude Include="cTimeManager.h" />
+    <ClInclude Include="cUnit.h" />
+    <ClInclude Include="IEntity.h" />
+    <ClInclude Include="ISteeringEntity.h" />
+    <ClInclude Include="Math.h" />
     <ClInclude Include="MountAndWarcraft.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SteeringBehavior.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestMap.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cCamera.cpp" />
+    <ClCompile Include="cCharacter.cpp" />
     <ClCompile Include="cDeviceManager.cpp" />
     <ClCompile Include="cFrame.cpp" />
+    <ClCompile Include="cFrustum.cpp" />
     <ClCompile Include="cGameManager.cpp" />
     <ClCompile Include="cObject.cpp" />
     <ClCompile Include="cObjectManager.cpp" />
+    <ClCompile Include="cPlayer.cpp" />
     <ClCompile Include="cTextureManager.cpp" />
+    <ClCompile Include="cTimeManager.cpp" />
+    <ClCompile Include="cUnit.cpp" />
+    <ClCompile Include="IEntity.cpp" />
+    <ClCompile Include="ISteeringEntity.cpp" />
+    <ClCompile Include="Math.cpp" />
     <ClCompile Include="MountAndWarcraft.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -167,6 +189,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SteeringBehavior.cpp" />
+    <ClCompile Include="TestMap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MountAndWarcraft.rc" />

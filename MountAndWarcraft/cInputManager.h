@@ -1,7 +1,7 @@
 #pragma once
 #include "stdafx.h"
 
-#define INPUT InputManager::Instance()
+#define INPUT cInputManager::Instance()
 #define KEY_COUNT		256
 #define MOUSE_COUNT		3
 

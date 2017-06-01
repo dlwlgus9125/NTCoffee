@@ -46,6 +46,36 @@
     <Filter Include="00. Manager\06. cAIManager">
       <UniqueIdentifier>{eafc22da-8a79-4ce5-a72c-17e43673b203}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02. cCharacter">
+      <UniqueIdentifier>{b10dbb99-cefd-4f39-b5bd-2d4bcde2977f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. cCharacter\00. Entity">
+      <UniqueIdentifier>{2cde42bf-e39c-461d-9add-a2974edae094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. cCharacter\00. Entity\00. SteeringEntity">
+      <UniqueIdentifier>{c4879d3d-2466-4f08-b34b-2035198da68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. cCharacter\00. Entity\01. SteeringBehavior">
+      <UniqueIdentifier>{f55f4d7d-8074-4a94-9500-0aded2a6b0e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. cCharacter\01. cPlayer">
+      <UniqueIdentifier>{1d961bd3-4f07-4104-a90b-4a6066730ac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. cCharacter\02. cUnit">
+      <UniqueIdentifier>{a815f958-de7a-4960-b556-b04f602bbb81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. UTIL\00. cCamera">
+      <UniqueIdentifier>{fafe9262-a1e7-4192-837b-ba6bf648b45a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. UTIL\01. cFrustum">
+      <UniqueIdentifier>{a66a4fcc-e517-4999-96d6-9cd744abd27b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Manager\08. cTimeManager">
+      <UniqueIdentifier>{575c3a98-4bac-4a36-9f3f-e1bb438b36a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. UTIL\02. Math">
+      <UniqueIdentifier>{4a31c53d-bc28-442c-83b2-b6b74e795ea1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -85,6 +115,39 @@
     <ClInclude Include="cDeviceManager.h">
       <Filter>00. Manager\04. cDeviceManager</Filter>
     </ClInclude>
+    <ClInclude Include="TestMap.h">
+      <Filter>99. ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="cCharacter.h">
+      <Filter>02. cCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="ISteeringEntity.h">
+      <Filter>02. cCharacter\00. Entity\00. SteeringEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="SteeringBehavior.h">
+      <Filter>02. cCharacter\00. Entity\01. SteeringBehavior</Filter>
+    </ClInclude>
+    <ClInclude Include="IEntity.h">
+      <Filter>02. cCharacter\00. Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="cPlayer.h">
+      <Filter>02. cCharacter\01. cPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="cUnit.h">
+      <Filter>02. cCharacter\02. cUnit</Filter>
+    </ClInclude>
+    <ClInclude Include="cCamera.h">
+      <Filter>98. UTIL\00. cCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="cFrustum.h">
+      <Filter>98. UTIL\01. cFrustum</Filter>
+    </ClInclude>
+    <ClInclude Include="cTimeManager.h">
+      <Filter>00. Manager\08. cTimeManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>98. UTIL\02. Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cGameManager.cpp">
@@ -108,6 +171,39 @@
     </ClCompile>
     <ClCompile Include="cDeviceManager.cpp">
       <Filter>00. Manager\04. cDeviceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMap.cpp">
+      <Filter>99. ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="cCharacter.cpp">
+      <Filter>02. cCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="ISteeringEntity.cpp">
+      <Filter>02. cCharacter\00. Entity\00. SteeringEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="SteeringBehavior.cpp">
+      <Filter>02. cCharacter\00. Entity\01. SteeringBehavior</Filter>
+    </ClCompile>
+    <ClCompile Include="IEntity.cpp">
+      <Filter>02. cCharacter\00. Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="cPlayer.cpp">
+      <Filter>02. cCharacter\01. cPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="cUnit.cpp">
+      <Filter>02. cCharacter\02. cUnit</Filter>
+    </ClCompile>
+    <ClCompile Include="cCamera.cpp">
+      <Filter>98. UTIL\00. cCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="cFrustum.cpp">
+      <Filter>98. UTIL\01. cFrustum</Filter>
+    </ClCompile>
+    <ClCompile Include="cTimeManager.cpp">
+      <Filter>00. Manager\08. cTimeManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>98. UTIL\02. Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

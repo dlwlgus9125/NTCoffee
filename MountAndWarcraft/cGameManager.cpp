@@ -1,37 +1,81 @@
 #include "stdafx.h"
 #include "cGameManager.h"
 #include "cObjectManager.h"
+#include "TestMap.h"
 
-#define FPS				60
+
+
 
 
 void cGameManager::Init()
 {
-	m_frameTime = 1.0f / (float)FPS;
-	m_currentTime = timeGetTime();
-	m_prevTime = timeGetTime();
-	OBJECT->Init();
 	DEVICE->Init();
+	TIME->Init(60);
+	
+	OBJECT->Init();
+	
+    CAMERA->Setup();
+	
+	TESTMAP->Setup();
+	INPUT->Init();
+	//<<
 }
 
 void cGameManager::Update()
 {
-	m_currentTime = timeGetTime();
-	float deltaTime = (m_currentTime - m_prevTime) * 0.001f;	// 실제 한 프레임 시간
-
-	if (deltaTime >= m_frameTime)
+	if (TIME->Update())
 	{
+		//cout << m_player->GetCharacterEntity()->Pos().x << ", " << m_player->GetCharacterEntity()->Pos().y << ", " << m_player->GetCharacterEntity()->Pos().z << endl;
+
 		m_prevTime = m_currentTime;
-		OBJECT->Update();
-		cout << deltaTime << endl;
+		INPUT->Update();
+		
+		OBJECT->Update(TIME->DeltaTime());
+		CAMERA->Update();
 	}
-	
+
 }
 
 void cGameManager::Render()
 {
+	CAMERA->Update();
+	D3DDevice->Clear(NULL,
+		NULL,
+		D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER,
+		D3DCOLOR_XRGB(47, 121, 112),
+		1.0f, 0);
+	D3DDevice->BeginScene();
+
+	OBJECT->Render();
+	TESTMAP->Render();
+	D3DDevice->EndScene();
+	D3DDevice->Present(NULL, NULL, NULL, NULL);
 }
 
 void cGameManager::Release()
 {
 }
+
+void cGameManager::WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
+{
+
+	CAMERA->WndProc(hwnd, message, wParam, lParam);
+
+
+	switch (message)
+	{
+	case WM_LBUTTONDOWN:
+	{
+
+	}
+	break;
+
+	case WM_RBUTTONDOWN:
+	{
+
+	}
+	break;
+	}
+}
+
+

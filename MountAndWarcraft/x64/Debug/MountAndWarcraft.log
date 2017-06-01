@@ -1,0 +1,5 @@
+﻿  cTextureManager.cpp
+cDeviceManager.obj : error LNK2019: Direct3DCreate9 외부 기호(참조 위치: "public: void __cdecl cDeviceManager::Init(void)" (?Init@cDeviceManager@@QEAAXXZ) 함수)에서 확인하지 못했습니다.
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3d9.lib : warning LNK4272: 'X86' 라이브러리 컴퓨터 종류가 'x64' 대상 컴퓨터 종류와 충돌합니다.
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib : warning LNK4272: 'X86' 라이브러리 컴퓨터 종류가 'x64' 대상 컴퓨터 종류와 충돌합니다.
+C:\Users\dlwlg\Source\Repos\NTCoffee\x64\Debug\MountAndWarcraft.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.

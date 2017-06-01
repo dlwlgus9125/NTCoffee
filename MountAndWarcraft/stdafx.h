@@ -10,6 +10,7 @@
 #define WIN32_LEAN_AND_MEAN             // 거의 사용되지 않는 내용은 Windows 헤더에서 제외합니다.
 // Windows 헤더 파일:
 #include <windows.h>
+#include <process.h>
 
 // C 런타임 헤더 파일입니다.
 #include <stdlib.h>
@@ -49,10 +50,6 @@
 using namespace std;
 //<<
 
-//>>include
-#include "Singleton.h"
-#include "cDeviceManager.h"
-//<<
 
 
 //>> define 및 구조체
@@ -73,6 +70,11 @@ extern HWND	g_hWnd;
 				static class_name instance ; \
 				return &instance ; \
 			} 
+
+#define EPSILON             0.0001f
+#define ANGLE_TO_RADIAN		0.0174533f
+#define RADIAN_TO_ANGLE		57.2958f
+
 
 struct ST_PN_VERTEX
 {
@@ -129,6 +131,23 @@ struct ST_ROT_SAMPLE
 	}
 };
 
+struct MeshSpere
+{
+	LPD3DXMESH       m_pMeshSphere;
+	D3DMATERIAL9    m_stMtlSphere;
+	D3DXVECTOR3     m_vCenter;
+	float           m_radius;
+	MeshSpere() {};
+};
+
+struct ST_SPHERE
+{
+	ST_SPHERE() {}
+	ST_SPHERE(D3DXVECTOR3 pos, float radius) { vCenter = pos; fRadius = radius; }
+	bool isPicked;
+	D3DXVECTOR3 vCenter;
+	float fRadius;
+};
 
 #define SYNTHESIZE(varType, varName, funName)\
 protected: varType varName;\
@@ -150,4 +169,15 @@ public: virtual void Set##funName(varType var){\
 	varName = var;\
 	}\
 }
+
+
+//>>include
+#include "Singleton.h"
+#include "cCamera.h"
+#include "cDeviceManager.h"
+#include "cInputManager.h"
+#include "cObjectManager.h"
+#include "cTimeManager.h"
+#include "Math.h"
 //<<
+

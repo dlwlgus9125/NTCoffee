@@ -1,11 +1,3 @@
-﻿  cGameManager.cpp
-c:\users\dlwlg\documents\visual studio 2017\projects\mountandwarcraft\mountandwarcraft\cgamemanager.cpp(11): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\dlwlg\documents\visual studio 2017\projects\mountandwarcraft\mountandwarcraft\cgamemanager.cpp(12): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\dlwlg\documents\visual studio 2017\projects\mountandwarcraft\mountandwarcraft\cgamemanager.cpp(19): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  MountAndWarcraft.cpp
-  코드를 생성하고 있습니다...
-  컴파일하고 있습니다...
-  cObjectManager.cpp
-  코드를 생성하고 있습니다...
-  MountAndWarcraft.vcxproj -> C:\Users\dlwlg\Documents\Visual Studio 2017\Projects\MountAndWarcraft\Debug\MountAndWarcraft.exe
-  MountAndWarcraft.vcxproj -> C:\Users\dlwlg\Documents\Visual Studio 2017\Projects\MountAndWarcraft\Debug\MountAndWarcraft.pdb (Partial PDB)
+﻿  MountAndWarcraft.cpp
+  MountAndWarcraft.vcxproj -> C:\Users\dlwlg\Source\Repos\NTCoffee\Debug\MountAndWarcraft.exe
+  MountAndWarcraft.vcxproj -> C:\Users\dlwlg\Source\Repos\NTCoffee\Debug\MountAndWarcraft.pdb (Partial PDB)

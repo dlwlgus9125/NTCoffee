@@ -2,10 +2,6 @@
 #include "cDeviceManager.h"
 
 
-LPDIRECT3DDEVICE9	cDeviceManager::GetDevice()
-{
-	return m_pD3DDevice;
-}
 
 void cDeviceManager::Init()
 {
@@ -23,7 +19,7 @@ void cDeviceManager::Init()
 	}
 	else
 	{
-		nVertexProcessing = D3DCREATE_SOFTWARE_VERTEXPROCESSING;
+		nVertexProcessing = D3DCREATE_SOFTWARE_VERTEXPROCESSING | D3DCREATE_MULTITHREADED;
 	}
 
 	D3DPRESENT_PARAMETERS stD3DPP;
@@ -40,6 +36,12 @@ void cDeviceManager::Init()
 		nVertexProcessing,
 		&stD3DPP,
 		&m_pD3DDevice);
+}
+
+
+LPDIRECT3DDEVICE9	cDeviceManager::GetDevice()
+{
+	return m_pD3DDevice;
 }
 
 void cDeviceManager::Destroy()
